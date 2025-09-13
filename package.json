@@ -1,13 +1,33 @@
 {
-  "name": "CharityEvents_DynamicWebsite",
+  "name": "charityevents_dynamicwebsite",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "a dynamic website to manage charity events in the city",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "private": true,
   "dependencies": {
-    "mysql": "^2.18.1"
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mossy-isme/CharityEvents_DynamicWebsite.git"
+  },
+  "author": "Moss Cluney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mossy-isme/CharityEvents_DynamicWebsite/issues"
+  },
+  "homepage": "https://github.com/mossy-isme/CharityEvents_DynamicWebsite#readme",
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
