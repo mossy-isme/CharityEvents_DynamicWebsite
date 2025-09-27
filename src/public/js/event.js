@@ -10,7 +10,10 @@ function renderEvent(e) {
       <p class="bg-gray-800 rounded w-fit text-white p-1 text-sm"><span class="italic font-semibold">Tickets</span>: ${e.ticket_price == 0 || e.ticket_price === "0.00" ? "Free" : "$" + e.ticket_price}</p>
       <p class="text-lg">${e.description ?? ""}</p>
       <p class="text-sm font-semibold mb-4">Organised by: ${e.organisation}</p>
+      <div class="flex flex-row gap-3">
+      <a class="form-row mt-4 self-center bg-gray-800 w-fit hover:bg-gray-700 hover:scale-95 active:scale-105 p-1 rounded text-gray-100 text-sm text-center" href="javascript:alert('This feature is currently under construction')">Register</a>
       <a class="form-row mt-4 self-center bg-gray-800 w-fit hover:bg-gray-700 hover:scale-95 active:scale-105 p-1 rounded text-gray-100 text-sm text-center" href="./search.html">Back to search</a>
+      </div>
     </div>
   `;
 }
