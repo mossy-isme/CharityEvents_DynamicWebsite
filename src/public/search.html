@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Charity Events – Search</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./js/search.js"></script>
+</head>
+<body class="bg-gray-200 flex flex-col min-h-screen">
+<nav class="bg-gray-800 rounded m-2 p-4 text-white sticky">
+    <a class="bg-gray-600 p-2 hover:bg-gray-700 rounded" href="./index.html">Home</a>
+    <a class="bg-gray-600 p-2 hover:bg-gray-700 rounded" href="./search.html">Search Events</a>
+</nav>
+
+<main class="bg-gray-300 rounded m-2 p-4 flex flex-col flex-grow">
+    <h1 class="text-5xl font-semibold mb-3 text-center">Search Events</h1>
+
+    <form id="searchForm" class="card flex flex-col" onsubmit="return false;">
+        <div class="form-row flex flex-row text-center gap-4 flex-wrap justify-between w-[70%] self-center">
+            <div class="flex flex-col">
+                <label class="font-semibold" for="date">Date</label>
+                <input id="date" type="date"/>
+            </div>
+            <div class="flex flex-col">
+                <label class="font-semibold"  for="location">Location (contains)</label>
+                <input id="location" type="text" placeholder="e.g. Byron, Tweed…"/>
+            </div>
+            <div class="flex flex-col">
+                <label class="font-semibold" for="category">Category</label>
+                <select class="bg-white" id="category">
+                    <option value="">Any category</option>
+                </select>
+            </div>
+            <div class="flex flex-col">
+                <label class="font-semibold" for="ticketPriceMax">Ticket Price (less than)</label>
+                <input id="ticketPriceMax" type="number" placeholder="e.g. 0.00, 10.00, 4.50"/>
+            </div>
+        </div>
+        <div class="rounded form-row my-4 self-center bg-gray-800 text-white w-fit p-1 hover:bg-gray-700 hover:scale-95 active:scale-105">
+            <button class="button" id="doSearch">Search</button>
+        </div>
+    </form>
+
+    <section class="grid gap-3 grid-cols-2 " id="results"></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Charity Events – Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="./js/home.js" type="module"></script>
+</head>
+<body class="bg-gray-200 flex flex-col min-h-screen">
+<nav class="bg-gray-800 rounded m-2 p-4 text-white sticky">
+    <a class="bg-gray-600 p-2 hover:bg-gray-700 rounded" href="./index.html">Home</a>
+    <a class="bg-gray-600 p-2 hover:bg-gray-700 rounded" href="./search.html">Search Events</a>
+</nav>
+<main class="bg-gray-300 rounded m-2 p-4 flex flex-col flex-grow">
+    <h1 class="text-5xl font-semibold mb-3 text-center">Upcoming Charity Events</h1>
+    <p class="meta bg-gray-700 rounded p-1 text-gray-200 mb-2 text-center text-xl w-fit self-center">🛈 Listed below are
+        current/upcoming events. Suspended or past events are hidden here.</p>
+    <section class="grid gap-3 grid-cols-2 " id="events"></section>
+</main>
+</body>
+</html>
